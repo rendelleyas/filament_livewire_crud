@@ -25,6 +25,17 @@
                         {{ $module->description }}
                     </div>
                 </div>
+
+                <div class="mt-6 bg-white dark:bg-gray-700 overflow-hidden shadow-sm sm:rounded-lg m-5">
+                    <div class="p-6 text-gray-900 dark:text-gray-100">
+                        <div class="mt-2 text-gray-600 dark:text-gray-400">
+                            Card
+                        </div>
+                        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ipsum sit amet tellus laoreet ullamcorper. Vivamus sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
