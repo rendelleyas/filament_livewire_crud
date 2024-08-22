@@ -19,7 +19,7 @@ For user access, login at
 - Once done cloning, setup your .env
 - For the backend side
 ```
-cp .env.exampl .env
+cp .env.example .env
 
 composer install
 php artisan key:generate
