@@ -35,3 +35,9 @@ npm install
 npm run dev
 
 ```
+
+Seeder account for admin
+```
+username: admin@email.com
+password: 123456789
+```
