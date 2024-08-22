@@ -53,4 +53,9 @@ class User extends Authenticatable implements FilamentUser
             'password' => 'hashed',
         ];
     }
+
+    public function modules()
+    {
+        return $this->belongsToMany(Module::class, 'user_module');
+    }
 }

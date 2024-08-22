@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
+use App\Models\Module;
 use App\Models\User;
 use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Section;
@@ -44,6 +45,12 @@ class UserResource extends Resource
                                 return ucwords(str_replace('_', ' ', $record->name));
                             })
                             ->required(),
+
+                        Select::make('modules')
+                            ->multiple()
+                            ->relationship(name: 'modules', titleAttribute: 'name')
+                            ->options(Module::all()->pluck('name', 'id'))
+                            ->visibleOn('edit'),
 
                         TextInput::make('password')->default(function () {
                             return Str::password(15, true, true, true);
